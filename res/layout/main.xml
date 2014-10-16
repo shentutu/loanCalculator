@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/alepha.loancalc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#050505"
+    >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_weight="1"
+    >
+  <TableLayout
+    android:id = "@+id/tblLayoutMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2"
+    android:shrinkColumns="0,1,2"
+  >
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="房价总额"
+            android:id="@+id/totalLoan"
+            android:width="60dp"
+            android:gravity="left"
+            />
+        <EditText
+            android:layout_column="1"
+            android:numeric="decimal"
+            android:id = "@+id/totalLoanEditView"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="元"
+            android:gravity="left"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <CheckBox
+            android:layout_span="2"
+            android:layout_column="0"
+            android:text="需要做低房价吗？"
+            android:id="@+id/makeLowerTotalLoan"
+            android:width="60dp"
+            android:gravity="left"
+            android:checked="false"
+            />
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="做低房价"
+            android:id="@+id/makeLowerLoan"
+            android:width="60dp"
+            android:gravity="left"
+            />
+        <EditText
+            android:layout_column="1"
+            android:numeric="decimal"
+            android:id = "@+id/makeLowerLoanEditView"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="元"
+            android:gravity="left"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        android:id= "@+id/firstPayTypeRow"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="首付几成"
+            android:id="@+id/firstPayType"
+            android:width="60dp"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_column="1"
+            android:id = "@+id/firstPayTypeRowSpinner"
+            android:gravity="center"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="贷款类型"
+            android:id="@+id/loanTypeId"
+            android:width="60dp"
+            android:gravity="left"
+            />
+        <Spinner
+            android:layout_column="1"
+            android:id = "@+id/loanTypeSpinner"
+            android:gravity="left"/>
+    </TableRow>
+    
+
+ 
+    <TableRow
+        android:layout_marginTop="3px"
+        android:id= "@+id/loanCalcTypeRow"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="首付几成"
+            android:id="@+id/loanCalcType"
+            android:width="60dp"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_column="1"
+            android:id = "@+id/loanCalcTypeSpinner"
+            android:gravity="center"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        android:id= "@+id/onetwoHouse"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="第几套房"
+            android:width="60dp"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_column="1"
+            android:id = "@+id/onetwoHouseSpinner"
+            android:gravity="center"/>
+    </TableRow>
+   
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        android:id="@+id/providentAmountTableRow"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="公贷总额"
+            android:id="@+id/providentAmountNum"
+            android:width="60dp"
+            android:gravity="left"/>
+        <EditText
+            android:id = "@+id/providentAmount"
+            android:layout_column="1"
+            android:numeric = "decimal"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="元"
+            android:gravity="left"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        android:id="@+id/tradeAmountNumTableRow"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="商贷总额"
+            android:id="@+id/tradeAmountNum"
+            android:width="60dp"
+            android:gravity="left"/>
+        <EditText
+            android:id = "@+id/tradeAmount"
+            android:layout_column="1"
+            android:numeric = "decimal"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="元"
+            android:gravity="left"/>
+    </TableRow>
+    
+
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="还款年限"
+            android:id="@+id/loanRepaymentPeroid"
+            android:width="60dp"
+            android:gravity="left"/>
+        <EditText
+            android:id="@+id/loanPeriod"
+            android:layout_column="1"
+            android:numeric = "decimal"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="年"
+            android:gravity="left"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="利率模式"
+            android:id="@+id/loanInterestMethod"
+            android:width="60dp"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_column="1"
+            android:id = "@+id/loanInterestMethodSpinner"
+            android:gravity="center"/>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/customizeRateRow"
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="自定义利率"
+            android:width="60dp"
+            android:gravity="left"/>
+        <EditText
+            android:id="@+id/customizeRate"
+            android:layout_column="1"
+            android:numeric = "decimal"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="折"
+            android:gravity="left"/>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/loanDisCountRow"
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="折扣额度"
+            android:id="@+id/loanDisCount"
+            android:width="60dp"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_column="1"
+            android:id = "@+id/loanDisCounSpinner"
+            android:gravity="center"/>
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/customizeDiscountRow"
+        android:layout_marginTop="3px"
+        >
+        <TextView
+            android:layout_column="0"
+            android:text="自定义折扣"
+            android:width="60dp"
+            android:gravity="left"/>
+        <EditText
+            android:id="@+id/customizeDiscount"
+            android:layout_column="1"
+            android:numeric = "decimal"
+            android:gravity="left"/>
+        <TextView
+            android:layout_column="2"
+            android:text="折"
+            android:gravity="left"/>
+    </TableRow>
+    
+    
+    <TableRow
+        android:layout_marginTop="3px"
+        >
+        <Button
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:text="开始计算"
+            android:id = "@+id/loanSubmitButton"
+            android:gravity="center"/>
+    </TableRow>
+    
+    
+</TableLayout>
+</LinearLayout>
+ <LinearLayout android:id="@+id/adLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    </LinearLayout>
+    
+</LinearLayout>

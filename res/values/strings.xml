@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoanCalcActivity!</string>
+    <string name="app_name">房贷计算器(自定义版)</string>
+
+    <string name="r_120706_6m">5.6</string>
+    <string name="r_120706_6m_2_1y">6.0</string>
+    <string name="r_120706_1y_2_3y">6.15</string>
+    <string name="r_120706_3y_2_5y">6.40</string>
+    <string name="r_120706_5y_above">6.55</string>
+    
+    <string name="r_120608_6m">5.85</string>
+    <string name="r_120608_6m_2_1y">6.31</string>
+    <string name="r_120608_1y_2_3y">6.40</string>
+    <string name="r_120608_3y_2_5y">6.65</string>
+    <string name="r_120608_5y_above">6.8</string>
+    
+    
+    <string name="r_110707_6m">6.1</string>
+    <string name="r_110707_6m_2_1y">6.56</string>
+    <string name="r_110707_1y_2_3y">6.65</string>
+    <string name="r_110707_3y_2_5y">6.9</string>
+    <string name="r_110707_5y_above">7.05</string>
+    
+    <string name="r_110406_6m">5.85</string>
+    <string name="r_110406_6m_2_1y">6.31</string>
+    <string name="r_110406_1y_2_3y">6.4</string>
+    <string name="r_110406_3y_2_5y">6.65</string>
+    <string name="r_110406_5y_above">6.8</string>
+    
+    
+    <string name="r_110209_6m">5.6</string>
+    <string name="r_110209_6m_2_1y">6.06</string>
+    <string name="r_110209_1y_2_3y">6.1</string>
+    <string name="r_110209_3y_2_5y">6.45</string>
+    <string name="r_110209_5y_above">6.6</string>
+    
+    <string name="r_101226_6m">5.35</string>
+    <string name="r_101226_6m_2_1y">5.81</string>
+    <string name="r_101226_1y_2_3y">5.85</string>
+    <string name="r_101226_3y_2_5y">6.22</string>
+    <string name="r_101226_5y_above">6.4</string>
+    
+    <string name="p_110707_1y_2_5y_house1">4.0</string>
+    <string name="p_110707_5y_2_30y_house1">4.5</string>
+    
+    <string name="p_110707_1y_2_5y_house2">4.4</string>
+    <string name="p_110707_5y_2_30y_house2">4.95</string>
+    
+
+</resources>
